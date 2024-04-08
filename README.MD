@@ -6,9 +6,8 @@
 
 Пример:
 
-def isEven(value):
-
-      return value % 2 == 0
+    def isEven(value):
+        return value % 2 == 0
 
 ## Вопрос №2
 
@@ -16,9 +15,9 @@ def isEven(value):
 
 Оценивается:
 
-    Полнота и качество реализации
-    Оформление кода
-    Наличие сравнения и пояснения по быстродействию
+- Полнота и качество реализации
+- Оформление кода
+- Наличие сравнения и пояснения по быстродействию
 
 ## Вопрос №3
 
@@ -28,25 +27,25 @@ def isEven(value):
 
 ## 1.
 
-mod time: 6.4
-& time: 5.0
+    mod time: 6.4
+    & time: 5.0
 
 Вариант с логическим и быстрее в силу работы с самими битами числа, и отсутствием вычисления "дорогой" операции деления.
 Но такой вариант требует немного больше времени для понимания что происходит читателю
 
 ## 2.
 
-Addition speed:
-DequeCircularBuffer time: 23.747684
-ListCircularBuffer time: 26.3042843
+    Addition speed:
+    DequeCircularBuffer time: 23.747684
+    ListCircularBuffer time: 26.3042843
 
-Buffer size:
-DequeCircularBuffer size: 82500760
-ListCircularBuffer size: 80000056
+    Buffer size:
+    DequeCircularBuffer size: 82500760
+    ListCircularBuffer size: 80000056
 
-Pop speed:
-DequeCircularBuffer time: 7.8169389
-ListCircularBuffer time: 9.7740865
+    Pop speed:
+    DequeCircularBuffer time: 7.8169389
+    ListCircularBuffer time: 9.7740865
 
 Циклический буфер в основе которого лежит двунаправленная очередь работает быстрее, чем буфер, в основе которого лежит список, в силу того что в нем используются эффективные операции добавления и удаления в конец и начало коллекции. Также можно заметить что буффер с deque занимает больше памяти, это связано с тем, что он хранит ссылки на каждый узел, что и позволяет эффективно добавлять и удалять элементы в начало и конец.
 
